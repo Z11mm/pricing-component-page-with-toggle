@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
+// font styles
 $font-stack: 'Montserrat', san-serif;
+
+// colors
+$very-light-greyish-blue: hsl(240, 78%, 98%);
+$light-greyish-blue: hsl(234, 14%, 74%);
+$greyish-blue: hsl(233, 13%, 49%);
+$dark-greyish-blue: hsl(232, 13%, 33%);
 
 * {
   box-sizing: border-box;
@@ -9,5 +16,16 @@ $font-stack: 'Montserrat', san-serif;
 }
 
 body {
-    font-family: $font-stack;
+  font-family: $font-stack;
+  display: flex;
+  flex-flow: column wrap;
+  background-image: url('../images/bg-top.svg');
+  background-size: 100px 200px;
+  background-repeat: no-repeat;
+  background-position: right top;
+  text-align: center;
+}
+
+.container {
+  padding: 3rem 1rem;
 }
