@@ -25,3 +25,17 @@ body {
 .container {
   padding: 3rem 1rem;
 }
+
+li#subscription {
+  font-size: 40px;
+  padding: 0 0 2rem;
+}
+
+li.monthly {
+  display: none;
+}
+
+span.dollar-sign {
+  font-size: 22px;
+  vertical-align: middle;
+}

@@ -14,7 +14,13 @@ button {
   letter-spacing: 0.1em;
 }
 
+button.even {
+  background: #fff;
+  color: #696fdd;
+}
+
 .card {
+  padding-top: 1rem;
   max-width: 16rem;
   margin: 1rem auto;
   border-radius: 10px;
@@ -29,6 +35,7 @@ button {
 .card:nth-child(even) {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
   background-image: linear-gradient(180deg, #a3a8f0, #696fdd);
+  color: #fff;
 }
 
 .card h3 {
@@ -71,5 +78,19 @@ body {
 
 .container {
   padding: 3rem 1rem;
+}
+
+li#subscription {
+  font-size: 40px;
+  padding: 0 0 2rem;
+}
+
+li.monthly {
+  display: none;
+}
+
+span.dollar-sign {
+  font-size: 22px;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=styles.min.css.map */

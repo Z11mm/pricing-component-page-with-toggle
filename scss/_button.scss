@@ -19,3 +19,8 @@
 button {
   @extend %btn-styles;
 }
+
+button.even {
+  background: #fff;
+  color: hsl(237, 63%, 64%);
+}
