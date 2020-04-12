@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 @import 'base';
-@import 'buttons';
+@import 'button';
 @import 'card';
 
 
@@ -19,6 +19,7 @@ body {
   background-repeat: no-repeat;
   background-position: right top;
   text-align: center;
+  background-color: hsl(240, 78%, 98%);
 }
 
 .container {
