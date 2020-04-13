@@ -24,7 +24,7 @@ button.even {
   max-width: 16rem;
   margin: 1rem auto;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
   color: #494c5f;
 }
@@ -40,7 +40,7 @@ button.even {
 }
 
 .card h3 {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem 0;
 }
 
 .card ul {
@@ -51,6 +51,83 @@ button.even {
 .card ul li {
   border-bottom: 1px solid #b3b5c6;
   padding: 1rem 1.2rem;
+}
+
+li#subscription {
+  font-size: 40px;
+  padding-bottom: 1.2rem;
+}
+
+li.monthly {
+  display: none;
+}
+
+span.dollar-sign {
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  margin: 2rem 1rem 3rem;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch input:checked + .slider {
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0, #696fdd);
+}
+
+.toggle-switch input:checked + .slider::before {
+  -webkit-transform: translateX(24px);
+          transform: translateX(24px);
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0, #696fdd);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+.toggle-area > span {
+  color: #6d708d;
+  font-weight: 700;
+  font-size: 12px;
 }
 
 * {
@@ -81,17 +158,7 @@ body {
   padding: 3rem 1rem;
 }
 
-li#subscription {
-  font-size: 40px;
-  padding: 0 0 2rem;
-}
-
-li.monthly {
-  display: none;
-}
-
-span.dollar-sign {
-  font-size: 22px;
-  vertical-align: middle;
+.container h2 {
+  color: #6d708d;
 }
 /*# sourceMappingURL=styles.min.css.map */

@@ -2,7 +2,7 @@
 @import 'base';
 @import 'button';
 @import 'card';
-
+@import 'toggle' ;
 
 * {
   box-sizing: border-box;
@@ -24,18 +24,10 @@ body {
 
 .container {
   padding: 3rem 1rem;
+
+  h2 {
+    color: $greyish-blue;
+  }
 }
 
-li#subscription {
-  font-size: 40px;
-  padding: 0 0 2rem;
-}
 
-li.monthly {
-  display: none;
-}
-
-span.dollar-sign {
-  font-size: 22px;
-  vertical-align: middle;
-}
