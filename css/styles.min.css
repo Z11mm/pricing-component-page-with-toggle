@@ -62,6 +62,10 @@ li.monthly {
   display: none;
 }
 
+.annually {
+  display: none;
+}
+
 span.dollar-sign {
   font-size: 22px;
   vertical-align: middle;
