@@ -33,7 +33,7 @@
 
       <div class="toggle-area">
         <span>Annually</span>
-        <label for="toggle-switch" class="toggle-switch">
+        <label for="toggle-switch" class="toggle-switch" aria-label="toggle-switch">
           <input id="toggle-switch" type="checkbox">
           <span class="slider round"></span>
         </label> 
@@ -43,10 +43,10 @@
       <section id="card-basic" class="card">
         <h3>Basic</h3>
         <ul>
-          <li id="subscription" class="monthly">
+          <li data-subscription="monthly" class="monthly">
             <span class="dollar-sign">&dollar;</span>19.99
           </li>
-          <li id="subscription" class="annually">
+          <li data-subscription="annually" class="annually">
             <span class="dollar-sign">&dollar;</span>199.99
           </li>
           <li>500 GB Storage</li>
@@ -60,10 +60,10 @@
         <div class="card-pro">
           <h3>Professional</h3>
           <ul>
-            <li id="subscription" class="monthly">
+            <li data-subscription="monthly" class="monthly">
               <span class="dollar-sign">&dollar;</span>24.99
             </li>
-            <li id="subscription" class="annually">
+            <li data-subscription="annually" class="annually">
               <span class="dollar-sign">&dollar;</span>249.99
             </li>
             <li>1 TB Storage</li>
@@ -77,10 +77,10 @@
       <section id="card-master" class="card">
         <h3>Master</h3>
         <ul>
-          <li id="subscription" class="monthly">
+          <li data-subscription="monthly" class="monthly">
             <span class="dollar-sign">&dollar;</span>39.99
           </li>
-          <li id="subscription" class="annually">
+          <li data-subscription="annually" class="annually">
             <span class="dollar-sign">&dollar;</span>399.99
           </li>
           <li>2 TB Storage</li>
@@ -99,5 +99,7 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </div>
     </footer>
+
+    <script src="./toggle.js"></script>
   </body>
 </html>
