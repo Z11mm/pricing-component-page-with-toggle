@@ -20,8 +20,8 @@ button.even {
 }
 
 .card {
-  padding-top: 1rem;
-  max-width: 16rem;
+  padding: 1rem 1rem;
+  width: 16rem;
   margin: 1rem auto;
   border-radius: 10px;
   font-size: 12px;
@@ -37,6 +37,7 @@ button.even {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
   background-image: linear-gradient(180deg, #a3a8f0, #696fdd);
   color: #fff;
+  z-index: 1;
 }
 
 .card h3 {
@@ -69,6 +70,12 @@ li.monthly {
 span.dollar-sign {
   font-size: 22px;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 600px) {
+  .card:nth-child(even) {
+    background: none;
+  }
 }
 
 .toggle-switch {
@@ -164,5 +171,33 @@ body {
 
 .container h2 {
   color: #6d708d;
+}
+
+@media screen and (min-width: 600px) {
+  .card-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .card-wrapper section {
+    margin: 0;
+  }
+  .scaled-card {
+    position: absolute;
+    left: 616px;
+    top: 0px;
+    z-index: -1;
+    width: 17rem;
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+    background-image: linear-gradient(180deg, #a3a8f0, #696fdd);
+    height: 23rem;
+    -webkit-transform: scaleY(1.1);
+            transform: scaleY(1.1);
+  }
 }
 /*# sourceMappingURL=styles.min.css.map */
