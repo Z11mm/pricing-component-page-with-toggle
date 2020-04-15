@@ -160,7 +160,7 @@ body {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   background-image: url("../images/bg-top.svg");
-  background-size: 100px 200px;
+  background-size: 50px 300px;
   background-repeat: no-repeat;
   background-position: right top;
   text-align: center;
@@ -185,6 +185,12 @@ footer div.attribution a {
 }
 
 @media screen and (min-width: 600px) {
+  body {
+    background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right top, left bottom;
+    background-size: 600px 500px, 600px 300px;
+  }
   .card-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
