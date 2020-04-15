@@ -175,6 +175,15 @@ body {
   color: #6d708d;
 }
 
+footer div.attribution {
+  font-size: 8px;
+  text-align: center;
+}
+
+footer div.attribution a {
+  color: #6d708d;
+}
+
 @media screen and (min-width: 600px) {
   .card-wrapper {
     display: -webkit-box;
@@ -184,6 +193,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
+    margin: 2rem 0;
   }
   .card-wrapper section {
     margin: 0;
