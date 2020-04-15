@@ -176,6 +176,7 @@ body {
 }
 
 footer div.attribution {
+  margin-top: 3rem;
   font-size: 8px;
   text-align: center;
 }
@@ -186,10 +187,11 @@ footer div.attribution a {
 
 @media screen and (min-width: 600px) {
   body {
+    height: 100vh;
     background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
     background-repeat: no-repeat;
     background-position: right top, left bottom;
-    background-size: 600px 500px, 600px 300px;
+    background-size: 600px 500px, 600px 200px;
   }
   .card-wrapper {
     display: -webkit-box;
