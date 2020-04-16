@@ -204,13 +204,14 @@ footer div.attribution a {
   .card-wrapper section {
     margin: 0;
   }
-  .card-wrapper .card-pro {
+  .card-wrapper #card-pro {
     position: relative;
   }
   .scaled-card {
     position: absolute;
-    top: 33.5%;
-    left: 41.2%;
+    top: 0%;
+    right: 0%;
+    margin-right: -3.5%;
     z-index: -1;
     width: 17rem;
     border-radius: 10px;
