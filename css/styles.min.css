@@ -199,16 +199,18 @@ footer div.attribution a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    position: relative;
     margin: 2rem 0;
   }
   .card-wrapper section {
     margin: 0;
   }
+  .card-wrapper .card-pro {
+    position: relative;
+  }
   .scaled-card {
     position: absolute;
-    left: 616px;
-    top: 0px;
+    top: 33.5%;
+    left: 41.2%;
     z-index: -1;
     width: 17rem;
     border-radius: 10px;

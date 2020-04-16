@@ -52,18 +52,24 @@ footer div.attribution {
   .card-wrapper {
     display: flex;
     justify-content: center;
-    position: relative;
+    // position: relative;
     margin: 2rem 0;
 
     section {
       margin: 0;
     }
+
+    .card-pro {
+      position: relative;
+    }
   }
 
   .scaled-card {
     position: absolute;
-    left: 616px;
-    top: 0px;
+    // left: 616px;
+    // top: 0px;
+    top: 33.5%;
+    left: 41.2%;
     z-index: -1;
     width: 17rem;
     border-radius: 10px;
