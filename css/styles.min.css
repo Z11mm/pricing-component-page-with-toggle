@@ -187,7 +187,6 @@ footer div.attribution a {
 
 @media screen and (min-width: 600px) {
   body {
-    height: 100vh;
     background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
     background-repeat: no-repeat;
     background-position: right top, left bottom;
